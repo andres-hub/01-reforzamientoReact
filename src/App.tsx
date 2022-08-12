@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { TiposBasicos } from './typescript/TiposBasicos';
+import { ObjetosLiterales } from './typescript/ObjetosLiterales';
+import { Funciones } from './typescript/Funciones';
+import { Contador } from './components/Contador';
+import { ContadorConHook } from './components/ContadorConHook';
+import { Login } from './components/Login';
+import Usuarios from './components/Usuarios';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='mt-2'>App
+      <h1>Introduccion a react</h1>
+      <hr/>
+      <Usuarios/>
+      <hr />
+      <TiposBasicos/>
+      <hr />
+      <ObjetosLiterales/>
+      <hr/>
+      <Funciones/>
+      <hr/>
+      <Contador/>
+      <hr/>
+      <ContadorConHook/>
+      <hr/>
+      <Login/>
     </div>
-  );
+  )
 }
 
 export default App;
